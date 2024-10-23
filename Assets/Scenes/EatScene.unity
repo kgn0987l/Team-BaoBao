@@ -374,7 +374,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ee433767c1b5b414dbcc0561e5c431f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3196,7 +3196,7 @@ SceneRoots:
   - {fileID: 1139617278}
   - {fileID: 740072051}
   - {fileID: 1025955126}
-  - {fileID: 879694832}
-  - {fileID: 291435668}
   - {fileID: 1779154495}
   - {fileID: 608247402}
+  - {fileID: 879694832}
+  - {fileID: 291435668}
