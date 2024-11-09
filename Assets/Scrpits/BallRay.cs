@@ -9,11 +9,13 @@ public class BallRay : MonoBehaviour
 
     private Rigidbody rb;
 
+    // 펫을 제어할 수 있는 참조를 추가합니다.
+    public PetController petController;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
     }
-
 
     void Update()
     {
@@ -43,6 +45,13 @@ public class BallRay : MonoBehaviour
         if (rb != null)
         {
             rb.isKinematic = true; // isKinematic을 켭니다.
+        }
+
+        // 공의 위치를 펫에게 전달하여 펫이 공을 향해 이동하도록 시작합니다.
+        if (petController != null)
+        {
+            petController.SetTargetPosition(transform.position); // 펫이 공의 위치로 이동하도록 설정
+            petController.StartMoving(); // 펫이 이동을 시작
         }
     }
 }
