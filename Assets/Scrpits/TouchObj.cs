@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
+
 public class TouchObj : MonoBehaviour
 {
     private RaycastHit hit; // ray의 충돌정보를 저장하는 구조체
@@ -15,7 +16,8 @@ public class TouchObj : MonoBehaviour
 
     public Animator FeedAnim;
     public Animator WaterAnim;
-    public GameObject FeedBox, WaterBox, FeedBowl, WaterBowl, Bowls, myCamera, feedBar, waterBar, testfeed, testwater, Clear, FeedEffectobj, WaterEffectobj;
+    public Animator petAnim;
+    public GameObject FeedBox, WaterBox, FeedBowl, WaterBowl, Bowls, myCamera, feedBar, waterBar, testfeed, testwater, Clear, FeedEffectobj, WaterEffectobj, MainCamera, SubCamera;
 
     public ParticleSystem FeedEffect;
     public ParticleSystem WaterEffect;
@@ -108,9 +110,12 @@ public class TouchObj : MonoBehaviour
 
             if (FullFeed && FullWater)
             {
-                Clear.SetActive(true);
+                MainCamera.SetActive(false);
+                SubCamera.SetActive(true) ;
+                petAnim.Play("Puddle_eat");
+                Invoke("OnClear", 2f); 
                 DataManager.Instance.curHunger += 30;
-                Invoke("SceneChangeMethod", 1.5f);
+                Invoke("SceneChangeMethod", 3.5f);
                 return;
             }
         }
@@ -284,5 +289,10 @@ public class TouchObj : MonoBehaviour
     public void SceneChangeMethod()
     {
         SceneChangeManager.Instance.ChangeScene(3);
+    }
+
+    public void OnClear()
+    {
+        Clear.SetActive(true);
     }
 }
