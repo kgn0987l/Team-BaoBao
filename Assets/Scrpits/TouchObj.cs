@@ -78,8 +78,12 @@ public class TouchObj : MonoBehaviour
 
             if(FullFeed && FullWater)
             {
-                Clear.SetActive(true);
-                Invoke("SceneChangeMethod", 1.5f);
+                MainCamera.SetActive(false);
+                SubCamera.SetActive(true);
+                petAnim.Play("Puddle_eat");
+                Invoke("OnClear", 2f);
+                DataManager.Instance.curHunger += 30;
+                Invoke("SceneChangeMethod", 3.5f);
                 return;
             }
         }
