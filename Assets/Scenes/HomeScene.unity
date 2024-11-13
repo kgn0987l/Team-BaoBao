@@ -1861,7 +1861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxRaycastDistance: 15
   Pet: {fileID: 1394645906}
-  FriendBar: {fileID: 436650152}
+  FriendBar: {fileID: 2132856455}
   HomeUI: {fileID: 783169576}
   perspectiveCamera: {fileID: 1660658641}
   orthographicCamera: {fileID: 330585545}
@@ -10775,7 +10775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perspectiveCamera: {fileID: 1660658641}
   orthographicCamera: {fileID: 330585545}
-  FriendBar: {fileID: 436650152}
+  FriendBar: {fileID: 2132856455}
   HomeUI: {fileID: 783169576}
   maxRaycastDistance: 10
 --- !u!1 &1674912541
