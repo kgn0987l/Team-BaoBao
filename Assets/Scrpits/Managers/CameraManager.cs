@@ -25,7 +25,7 @@ public class CameraManager : MonoBehaviour
     void Update()
     {
         // 마우스 왼쪽 버튼 클릭 시
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && OnUI.Instance.canTouch == true)
         {
             ObjHit(); // Raycast 실행
         }

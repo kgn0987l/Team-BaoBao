@@ -412,6 +412,7 @@ GameObject:
   - component: {fileID: 115799284}
   - component: {fileID: 115799283}
   - component: {fileID: 115799286}
+  - component: {fileID: 115799287}
   m_Layer: 5
   m_Name: Washing Btn
   m_TagString: Untagged
@@ -495,6 +496,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 115799287}
+        m_TargetAssemblyTypeName: UIopen, Assembly-CSharp
+        m_MethodName: CloseUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &115799284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,6 +556,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf1307273e91d764db452db69ffb8f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &115799287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115799281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fb0c83b392ded4da25a640c45b92ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &142511742
@@ -1468,6 +1493,7 @@ GameObject:
   - component: {fileID: 313465354}
   - component: {fileID: 313465353}
   - component: {fileID: 313465352}
+  - component: {fileID: 313465355}
   m_Layer: 5
   m_Name: Exit Btn
   m_TagString: Untagged
@@ -1550,6 +1576,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 313465355}
+        m_TargetAssemblyTypeName: UIopen, Assembly-CSharp
+        m_MethodName: CloseUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &313465353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1588,6 +1626,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313465350}
   m_CullTransparentMesh: 1
+--- !u!114 &313465355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313465350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fb0c83b392ded4da25a640c45b92ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &322320868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2947,6 +2997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 499128847}
   - component: {fileID: 499128846}
+  - component: {fileID: 499128848}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -2992,6 +3043,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &499128848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499128845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c7041861a7a0c40965ff38df898593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canTouch: 1
 --- !u!1 &506893919
 GameObject:
   m_ObjectHideFlags: 0
@@ -3431,6 +3495,7 @@ GameObject:
   - component: {fileID: 535020366}
   - component: {fileID: 535020365}
   - component: {fileID: 535020364}
+  - component: {fileID: 535020367}
   m_Layer: 5
   m_Name: Profile Btn
   m_TagString: Untagged
@@ -3514,6 +3579,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 535020367}
+        m_TargetAssemblyTypeName: UIopen, Assembly-CSharp
+        m_MethodName: OpenUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &535020365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3552,6 +3629,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 535020362}
   m_CullTransparentMesh: 1
+--- !u!114 &535020367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535020362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fb0c83b392ded4da25a640c45b92ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &556111357
 GameObject:
   m_ObjectHideFlags: 0
@@ -4195,6 +4284,7 @@ GameObject:
   - component: {fileID: 727500411}
   - component: {fileID: 727500410}
   - component: {fileID: 727500409}
+  - component: {fileID: 727500412}
   m_Layer: 5
   m_Name: Pet Style Btn
   m_TagString: Untagged
@@ -4277,6 +4367,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 727500412}
+        m_TargetAssemblyTypeName: UIopen, Assembly-CSharp
+        m_MethodName: OpenUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &727500410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4315,6 +4417,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727500407}
   m_CullTransparentMesh: 1
+--- !u!114 &727500412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727500407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fb0c83b392ded4da25a640c45b92ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &732554769
 GameObject:
   m_ObjectHideFlags: 0
@@ -7813,6 +7927,7 @@ GameObject:
   - component: {fileID: 1327834363}
   - component: {fileID: 1327834362}
   - component: {fileID: 1327834361}
+  - component: {fileID: 1327834364}
   m_Layer: 5
   m_Name: PetCare Btn
   m_TagString: Untagged
@@ -7895,6 +8010,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1327834364}
+        m_TargetAssemblyTypeName: UIopen, Assembly-CSharp
+        m_MethodName: OpenUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1327834362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7933,6 +8060,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327834359}
   m_CullTransparentMesh: 1
+--- !u!114 &1327834364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327834359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fb0c83b392ded4da25a640c45b92ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1329917901
 GameObject:
   m_ObjectHideFlags: 0
@@ -9436,6 +9575,7 @@ GameObject:
   - component: {fileID: 1497531083}
   - component: {fileID: 1497531082}
   - component: {fileID: 1497531081}
+  - component: {fileID: 1497531084}
   m_Layer: 5
   m_Name: Close Btn
   m_TagString: Untagged
@@ -9518,6 +9658,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1497531084}
+        m_TargetAssemblyTypeName: UIopen, Assembly-CSharp
+        m_MethodName: CloseUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1497531082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9556,6 +9708,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497531079}
   m_CullTransparentMesh: 1
+--- !u!114 &1497531084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497531079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fb0c83b392ded4da25a640c45b92ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1498784348
 GameObject:
   m_ObjectHideFlags: 0
@@ -9914,6 +10078,7 @@ GameObject:
   - component: {fileID: 1562203227}
   - component: {fileID: 1562203226}
   - component: {fileID: 1562203225}
+  - component: {fileID: 1562203228}
   m_Layer: 5
   m_Name: Setting Btn
   m_TagString: Untagged
@@ -9996,6 +10161,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1562203228}
+        m_TargetAssemblyTypeName: UIopen, Assembly-CSharp
+        m_MethodName: OpenUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1562203226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10034,6 +10211,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562203223}
   m_CullTransparentMesh: 1
+--- !u!114 &1562203228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562203223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fb0c83b392ded4da25a640c45b92ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1564776826
 GameObject:
   m_ObjectHideFlags: 0
@@ -11122,6 +11311,7 @@ GameObject:
   - component: {fileID: 1714675675}
   - component: {fileID: 1714675674}
   - component: {fileID: 1714675673}
+  - component: {fileID: 1714675676}
   m_Layer: 5
   m_Name: Close Btn
   m_TagString: Untagged
@@ -11204,6 +11394,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1714675676}
+        m_TargetAssemblyTypeName: UIopen, Assembly-CSharp
+        m_MethodName: CloseUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1714675674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11242,6 +11444,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714675671}
   m_CullTransparentMesh: 1
+--- !u!114 &1714675676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714675671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fb0c83b392ded4da25a640c45b92ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1716799348
 GameObject:
   m_ObjectHideFlags: 0
@@ -12663,6 +12877,7 @@ GameObject:
   - component: {fileID: 1849519586}
   - component: {fileID: 1849519585}
   - component: {fileID: 1849519588}
+  - component: {fileID: 1849519589}
   m_Layer: 5
   m_Name: Eat Btn
   m_TagString: Untagged
@@ -12746,6 +12961,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1849519589}
+        m_TargetAssemblyTypeName: UIopen, Assembly-CSharp
+        m_MethodName: CloseUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1849519586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12794,6 +13021,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf1307273e91d764db452db69ffb8f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1849519589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849519583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fb0c83b392ded4da25a640c45b92ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1851847000
@@ -14002,6 +14241,7 @@ GameObject:
   - component: {fileID: 1992004575}
   - component: {fileID: 1992004574}
   - component: {fileID: 1992004573}
+  - component: {fileID: 1992004576}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -14084,6 +14324,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1992004576}
+        m_TargetAssemblyTypeName: UIopen, Assembly-CSharp
+        m_MethodName: CloseUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1992004574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14122,6 +14374,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992004571}
   m_CullTransparentMesh: 1
+--- !u!114 &1992004576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992004571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fb0c83b392ded4da25a640c45b92ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2005152295
 GameObject:
   m_ObjectHideFlags: 0
@@ -14396,6 +14660,7 @@ GameObject:
   - component: {fileID: 2074174068}
   - component: {fileID: 2074174067}
   - component: {fileID: 2074174070}
+  - component: {fileID: 2074174071}
   m_Layer: 5
   m_Name: Play Btn
   m_TagString: Untagged
@@ -14479,6 +14744,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2074174071}
+        m_TargetAssemblyTypeName: UIopen, Assembly-CSharp
+        m_MethodName: CloseUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2074174068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14527,6 +14804,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf1307273e91d764db452db69ffb8f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2074174071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074174065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fb0c83b392ded4da25a640c45b92ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2094092773
