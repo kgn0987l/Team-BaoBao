@@ -11,6 +11,7 @@ TagManager:
   - Water
   - Feed Box
   - Water Box
+  - Ball
   layers:
   - Default
   - TransparentFX

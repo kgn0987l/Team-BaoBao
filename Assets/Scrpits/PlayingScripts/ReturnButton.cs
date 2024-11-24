@@ -25,6 +25,10 @@ public class ReturnButton : MonoBehaviour
 
     public void CountScore()
     {
+        if(Count > 5)
+        {
+            return;
+        }
         Count += 1;
         countText.text = Count.ToString();
     }

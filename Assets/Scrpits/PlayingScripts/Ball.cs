@@ -178,6 +178,24 @@ public class Ball : MonoBehaviour
             {
                 Clear.SetActive(true);
                 DataManager.Instance.curMentality += 30;
+                DataManager.Instance.curHunger -= 20;
+                DataManager.Instance.curHygiene -= 20;
+
+                if(DataManager.Instance.curMentality > DataManager.Instance.maxMentality)
+                {
+                    DataManager.Instance.curMentality = DataManager.Instance.maxMentality;
+                }
+
+                if (DataManager.Instance.curHunger < 0)
+                {
+                    DataManager.Instance.curHunger = 0;
+                }
+
+                if (DataManager.Instance.curHunger < 0)
+                {
+                    DataManager.Instance.curHunger = 0;
+                }
+
                 Invoke("HideClear", 1f);
                 Invoke("SceneChangeMethod", 1.5f);
                 return;

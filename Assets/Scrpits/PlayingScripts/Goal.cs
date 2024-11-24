@@ -1,0 +1,36 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor.Rendering;
+using UnityEditor.TerrainTools;
+using UnityEngine;
+
+public class Goal : MonoBehaviour
+{
+    public GameObject childObject;
+    public GameObject petObject;
+    public GameObject returnButton;
+    private PetController petController;
+    private Ball ball;
+    private ReturnButton returnbutton;
+
+    private void Awake()
+    {
+        petController = petObject.GetComponent<PetController>();
+        returnbutton = returnButton.GetComponent<ReturnButton>();
+        GameObject targetObject = GameObject.Find("Main Camera");
+
+        ball = targetObject.GetComponent<Ball>();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Ball"))
+        {
+            petController.StopMoving();
+            petController.LoseBall();
+            childObject.transform.SetParent(null);
+            ball.ReturnToOrigin();
+            returnbutton.CountScore();
+        }
+    }
+}
