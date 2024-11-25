@@ -7,9 +7,6 @@ using UnityEngine.UI;
 public class NewBehaviourScript : MonoBehaviour
 {
     public Camera perspectiveCamera; // 퍼스펙티브 카메라
-    public Camera orthographicCamera; // 오소그래픽 카메라
-    public GameObject FriendBar; // 애완동물 오브젝트
-    public GameObject HomeUI; // 애완동물 오브젝트
 
     private RaycastHit hit; // ray의 충돌정보를 저장하는 구조체
     private Ray ray;
@@ -28,15 +25,6 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Exit();
-
-            perspectiveCamera.gameObject.SetActive(false);
-
-            orthographicCamera.gameObject.SetActive(true);
-        }
-
         // 마우스 왼쪽 버튼 누르고 있을 때
         if (Input.GetMouseButton(0))
         {
@@ -72,12 +60,5 @@ public class NewBehaviourScript : MonoBehaviour
                 PatOnOff = true;
             }
         }
-    }
-
-    // 나가기 동작
-    private void Exit()
-    {
-        FriendBar.SetActive(false);
-        HomeUI.SetActive(true);
     }
 }

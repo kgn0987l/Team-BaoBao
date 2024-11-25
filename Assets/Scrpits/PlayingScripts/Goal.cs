@@ -1,8 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Rendering;
-using UnityEditor.TerrainTools;
 using UnityEngine;
+
+#if UNITY_EDITOR
+using UnityEditor.TerrainTools;
+using UnityEditor.Rendering;
+#endif
 
 public class Goal : MonoBehaviour
 {
