@@ -236,7 +236,7 @@ public class TouchObj : MonoBehaviour
 
                 if (curFeed < maxFeed)
                 {
-                    curFeed += 1f; // 현재 사료 양 증가
+                    curFeed += 0.5f; // 현재 사료 양 증가
                 }
 
                 if (curFeed >= maxFeed)
@@ -264,7 +264,7 @@ public class TouchObj : MonoBehaviour
 
                 if (curWater < maxWater)
                 {
-                    curWater += 1f; // 현재 물 양 증가
+                    curWater += 0.5f; // 현재 물 양 증가
                 }
 
                 if (curWater >= maxWater)
