@@ -7,7 +7,6 @@ public class PetController : MonoBehaviour
 {
     public bool isMove = false;
     public bool isBall = false;
-    public bool isGoal = false;
 
     public GameObject Ball;
     public float moveSpeed = 5f;
@@ -90,15 +89,11 @@ public class PetController : MonoBehaviour
     {
         isBall = true;
     }
-    
-    public void StopMoving()
-    {
-        animator.SetBool("isWalking", false);
-        isMove = false;
-    }
 
-    public void LoseBall()
+    public void Goal()
     {
         isBall = false;
+        animator.SetBool("isWalking", false);
+        isMove = false;
     }
 }

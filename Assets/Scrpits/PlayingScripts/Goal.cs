@@ -27,10 +27,9 @@ public class Goal : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Ball"))
+        if (other.CompareTag("Pet") && petController.isBall == true)
         {
-            petController.StopMoving();
-            petController.LoseBall();
+            petController.Goal();
             childObject.transform.SetParent(null);
             ball.ReturnToOrigin();
             returnbutton.CountScore();

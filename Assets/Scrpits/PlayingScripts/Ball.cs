@@ -110,7 +110,7 @@ public class Ball : MonoBehaviour
         if (Physics.Raycast(ray, out hit, pickUpRange))
         {
             Debug.Log("Raycast hit: " + hit.collider.name);
-            if (hit.collider != null && hit.collider.GetComponent<Rigidbody>() != null)
+            if (hit.collider != null && hit.collider.CompareTag("Ball") &&hit.collider.GetComponent<Rigidbody>() != null)
             {
                 pickedObject = hit.collider.gameObject;
                 Rigidbody rb = pickedObject.GetComponent<Rigidbody>();
