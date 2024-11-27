@@ -50,4 +50,9 @@ public class DataManager : MonoBehaviour
 
     public int maxMoney = 9999999;
     public int curMoney = 9999999;
+
+    public void OnDestroy()
+    {
+        Destroy(this.gameObject);
+    }
 }

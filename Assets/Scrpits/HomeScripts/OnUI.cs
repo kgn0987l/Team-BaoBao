@@ -33,4 +33,9 @@ public class OnUI : MonoBehaviour
     }
 
     public bool canTouch = true;
+
+    public void OnDestroy()
+    {
+        Destroy(this.gameObject);
+    }
 }
